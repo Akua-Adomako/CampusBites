@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Bites</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container nav-container">
+    <div class="logo">Campus<span>Bites</span></div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="close-btn" id="closeSidebar">&times;</div>
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Fast & Hot Campus Meals Delivered</h1>
+      <p>Get your favorite food delivered right to your hostel in minutes. No queues. No stress.</p>
+      <a href="menu.html" class="cta-button">Order Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero-image.png" alt="Delicious meal delivery">
+    </div>
+  </div>
+</section>
+
+
+<!-- Meals Section -->
+<section class="meals" id="popular-meals">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Popular Meals on Campus</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+      Freshly prepared. Hot. Delivered with love.
+    </p>
+
+    <div class="meal-grid">
+      <div class="meal-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/jollof.jpg" alt="Jollof Rice with Chicken">
+        <h3>Jollof Rice & Chicken</h3>
+        <p>Classic spicy jollof with crispy grilled chicken.</p>
+        <span class="price">GH₵ 25.00</span>
+      </div>
+
+      <div class="meal-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="images/banku.jpg" alt="Banku and Tilapia">
+        <h3>Banku & Tilapia</h3>
+        <p>Well-seasoned tilapia with hot shito and pepper sauce.</p>
+        <span class="price">GH₵ 30.00</span>
+      </div>
+
+      <div class="meal-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="images/fried-rice.jpg" alt="Fried Rice with Sausages">
+        <h3>Fried Rice & Sausages</h3>
+        <p>Crunchy veggies, eggs, sausages — a perfect lunch combo.</p>
+        <span class="price">GH₵ 22.00</span>
+      </div>
+
+      <div class="meal-card" data-aos="zoom-in" data-aos-delay="500">
+        <img src="images/kebab.jpg" alt="Campus Kebab">
+        <h3>Spicy Beef Kebab</h3>
+        <p>Skewered meat with that legendary Ghanaian suya vibe.</p>
+        <span class="price">GH₵ 10.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- How It Works Section -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">How It Works</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+      Get your favorite meals delivered in just a few steps.
+    </p>
+
+    <div class="steps">
+      <div class="step-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="step-icon">
+          <img src="images/icons/order-food.png" alt="Order Food Icon">
+        </div>
+        <h3>1. Browse & Order</h3>
+        <p>Explore our tasty menu, pick your favorites, and place an order easily online.</p>
+      </div>
+
+      <div class="step-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="step-icon">
+          <img src="images/icons/cooking.png" alt="Cooking Icon">
+        </div>
+        <h3>2. Meal is Prepared</h3>
+        <p>Our kitchen team gets cooking right away using fresh, quality ingredients.</p>
+      </div>
+
+      <div class="step-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="step-icon">
+          <img src="images/icons/fast-delivery.png" alt="Fast Delivery Icon">
+        </div>
+        <h3>3. We Deliver to You</h3>
+        <p>Within minutes, your food is on its way to your hostel or classroom — hot & fresh!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us" id="why-choose-us">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Why Choose CampusBites?</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+      We go beyond food delivery — here’s why students trust us daily.
+    </p>
+
+    <div class="features-grid">
+      <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fast Delivery">
+        <h3>Fast Delivery</h3>
+        <p>Your meals reach you hot and fresh in under 30 minutes — guaranteed.</p>
+      </div>
+
+      <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" alt="Affordable Prices">
+        <h3>Affordable Prices</h3>
+        <p>Delicious meals from as low as GH₵10. Perfect for every student budget.</p>
+      </div>
+
+      <div class="feature-box" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://cdn-icons-png.flaticon.com/512/809/809957.png" alt="Trusted Vendors">
+        <h3>Trusted Vendors</h3>
+        <p>Partnered with top local food joints to ensure hygiene and quality.</p>
+      </div>
+
+      <div class="feature-box" data-aos="fade-up" data-aos-delay="500">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="24/7 Support">
+        <h3>24/7 Support</h3>
+        <p>Got issues? We’re always here to help — anytime, any day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">What Students Are Saying</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+      Real feedback from your fellow campus foodies
+    </p>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/kwame.png" alt="Student 1" class="avatar">
+        <p class="quote">“FoodCampus has changed my lunch game. Fast delivery, hot food, always on time!”</p>
+        <h4 class="name">Kwame B.</h4>
+        <span class="program">Accounting Education, Level 100</span>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/AKU.jpg" alt="Student 2" class="avatar">
+        <p class="quote">“I love how affordable and fresh the meals are. I no longer stress about what to eat!”</p>
+        <h4 class="name">Akua B.</h4>
+        <span class="program">Economics Education, Level 300</span>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+        <img src="images/yaw.png" alt="Student 3" class="avatar">
+        <p class="quote">“This service is a life-saver during exam weeks. Highly recommend to every student!”</p>
+        <h4 class="name">Nana Y.</h4>
+        <span class="program">IT Education, Level 400</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Call to Action Section -->
+<section class="cta" id="cta">
+  <div class="cta-container" data-aos="zoom-in">
+    <h2>Craving something tasty?</h2>
+    <p>Let’s bring your next favorite meal right to your hostel room.</p>
+    <a href="order.html" class="btn btn-primary">Order Now</a>
+  </div>
+</section>
+
+
+<!-- Contact Teaser Section -->
+<section class="contact-teaser" data-aos="fade-up">
+  <div class="container">
+    <div class="contact-teaser-content">
+      <h2>Need Help or Have a Question?</h2>
+      <p>We’re always here to assist. Reach out and let’s talk food, delivery, or feedback!</p>
+      <a href="contact.html" class="btn-secondary">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h2>Campus<span>Bites</span></h2>
+      <p>Bringing hot meals to your hostel door — fast, fresh & affordable.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: support@campusbites.com</p>
+      <p>Phone: +233 24 123 4567</p>
+      <div class="social-icons">
+        <a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24" height="24">
+        </a>
+        <a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24" height="24">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 CampusBites. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true,     // whether animation should happen only once - while scrolling down
+  });
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
