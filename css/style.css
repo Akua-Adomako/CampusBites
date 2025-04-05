@@ -45,8 +45,10 @@ a {
   color: #111;
 }
 
-.logo span, .footer-brand span {
+.logo span,
+.footer-brand span {
   color: #e63946;
+  /* Red color for logo accent */
 }
 
 /* Nav Links */
@@ -58,16 +60,16 @@ a {
 .nav-links a {
   font-weight: 500;
   font-size: 1rem;
+  color: #222;
+  /* Default text color */
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #e63946;
+  /* Red color on hover */
 }
 
-.nav-links .active {
-  color: #e63946;
-}
 
 /* Hamburger */
 .hamburger {
@@ -146,10 +148,12 @@ a {
   .hamburger {
     display: flex;
   }
+
+  /* Mobile sidebar toggle */
+  .mobile-sidebar {
+    padding: 3rem 2rem;
+  }
 }
-
-
-
 
 .site-footer {
   background-color: #1a1a1a;

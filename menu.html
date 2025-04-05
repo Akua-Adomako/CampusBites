@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Menu | CampusBites</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="logo">Campus<span>Bites</span></div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+        <!-- View Cart Button -->
+        <a href="#cartSection" id="viewCartButton">View Cart</a> 
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+      <div class="close-btn" id="closeSidebar">&times;</div>
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- Search Bar -->
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search meals..."
+    class="search"
+  />
+
+  <!-- Filter Buttons -->
+  <div class="menu-filters">
+    <button class="filter-btn active" data-category="All">All</button>
+    <button class="filter-btn" data-category="Rice Dishes">Rice Dishes</button>
+    <button class="filter-btn" data-category="Local Dishes">Local Dishes</button>
+    <button class="filter-btn" data-category="Snacks">Snacks</button>
+    <button class="filter-btn" data-category="Drinks">Drinks</button>
+    <button class="filter-btn" data-category="Breakfast">Breakfast</button>
+  </div>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="menu-grid" id="menuGrid">
+        <!-- Meals will be injected here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart-section" id="cartSection">
+    <div class="container">
+      <h2>Your Cart</h2>
+      <div id="cartList">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div id="totalPrice">
+        <!-- Total price will be displayed here -->
+      </div>
+
+      <!-- Checkout Button -->
+      <button id="checkoutButton" class="checkout-btn">Checkout</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h2>Campus<span>Bites</span></h2>
+      <p>Bringing hot meals to your hostel door — fast, fresh & affordable.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: support@campusbites.com</p>
+      <p>Phone: +233 24 123 4567</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1DX3CEgSW2/?mibextid=wwXIfr">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="https://x.com/akuaadomako1?s=21">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/akua_artz?igsh=b2NlcTN1YTBxZzRl&utm_source=qr">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24" height="24">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 CampusBites. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="js/meals.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>

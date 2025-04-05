@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Order | CampusBites</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Details | CampusBites</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/order.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 </head>
 <body>
 
@@ -41,54 +39,30 @@
 
 </header>
 
-  <section class="order-hero">
+  <section class="order-section">
     <div class="container">
-      <h1 data-aos="fade-up">Place Your Order</h1>
-      <p data-aos="fade-up" data-aos-delay="100">Hot meals delivered straight to your door — fast, fresh & affordable.</p>
-    </div>
-  </section>
+      <h2>Order Details</h2>
+      
+      <!-- Cart Items Display -->
+      <h3>Items in your Cart:</h3>
+      <div id="cartItemsDisplay"></div>
+      <div id="totalPriceDisplay"></div>
 
-  <section class="order-form-section">
-    <div class="container">
-      <h2 data-aos="fade-up">Order Your Meal</h2>
-      <form action="confirm-order.html" method="get" class="order-form" data-aos="fade-up" data-aos-delay="100">
-        <div class="form-group">
-          <label for="fullname"><i class="fas fa-user"></i> Full Name</label>
-          <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
-        </div>
-        <div class="form-group">
-          <label for="phone"><i class="fas fa-phone-alt"></i> Phone Number</label>
-          <input type="tel" id="phone" name="phone" required placeholder="e.g. +233 24 123 4567">
-        </div>
-        <div class="form-group">
-          <label for="hostel"><i class="fas fa-building"></i> Hostel / Location</label>
-          <input type="text" id="hostel" name="hostel" required placeholder="e.g. Unity Hall, Room 24">
-        </div>
-        <div class="form-group">
-          <label for="meal"><i class="fas fa-utensils"></i> Select Meal</label>
-          <select id="meal" name="meal" required>
-            <option value="" disabled selected>Select your meal</option>
-            <option value="jollof">Jollof Rice & Chicken</option>
-            <option value="banku">Banku & Tilapia</option>
-            <option value="fried-rice">Fried Rice & Sausages</option>
-            <option value="kebab">Spicy Beef Kebab</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="quantity"><i class="fas fa-sort-numeric-up-alt"></i> Quantity</label>
-          <input type="number" id="quantity" name="quantity" min="1" value="1" required>
-        </div>
-        <div class="form-group">
-          <label for="notes"><i class="fas fa-pen"></i> Special Instructions (Optional)</label>
-          <textarea id="notes" name="notes" rows="3" placeholder="e.g. Less pepper, extra meat..."></textarea>
-        </div>
-        <button type="submit" class="order-submit-btn">
-          <i class="fas fa-paper-plane"></i> Submit Order
-        </button>
+      <h3>Buyer Information</h3>
+      <form id="buyerForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required placeholder="Enter your name">
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required placeholder="Enter your phone number">
+        
+        <label for="address">Hostel/Location:</label>
+        <textarea id="address" required placeholder="Eg: Autonomy Hall Room 5..."></textarea>
+        
+        <button type="submit" class="submit-btn">Submit Order</button>
       </form>
     </div>
   </section>
-
 
 
   <!-- Footer Section -->
@@ -132,10 +106,9 @@
   </div>
 </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  
+  <script src="js/order.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 </html>

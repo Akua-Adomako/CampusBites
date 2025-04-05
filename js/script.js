@@ -11,3 +11,5 @@ closeSidebar.addEventListener("click", () => {
   hamburger.classList.remove("open");
   sidebar.classList.remove("show");
 });
+
+
