@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm Order | CampusBites</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/confirm-order.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container nav-container">
+    <div class="logo">Campus<span>Bites</span></div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="close-btn" id="closeSidebar">&times;</div>
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+</header>
+
+  <section class="order-confirmation">
+    <div class="container">
+      <h2>Confirm Your Order</h2>
+      <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+      <p><strong>Phone:</strong> <span id="confirm-phone"></span></p>
+      <p><strong>Hostel / Location:</strong> <span id="confirm-hostel"></span></p>
+      <p><strong>Meal:</strong> <span id="confirm-meal"></span></p>
+      <p><strong>Quantity:</strong> <span id="confirm-quantity"></span></p>
+      <p><strong>Special Instructions:</strong> <span id="confirm-notes"></span></p>
+
+      <button onclick="window.location.href='order-success.html'" class="confirm-btn">Confirm Order</button>
+      <button onclick="window.location.href='order.html'" class="cancel-btn">Cancel</button>
+    </div>
+  </section>
+
+
+
+  <!-- Footer Section -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h2>Campus<span>Bites</span></h2>
+      <p>Bringing hot meals to your hostel door — fast, fresh & affordable.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: support@campusbites.com</p>
+      <p>Phone: +233 24 123 4567</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1DX3CEgSW2/?mibextid=wwXIfr">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="https://x.com/akuaadomako1?s=21">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/akua_artz?igsh=b2NlcTN1YTBxZzRl&utm_source=qr">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24" height="24">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 CampusBites. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('confirm-name').textContent = params.get('fullname');
+    document.getElementById('confirm-phone').textContent = params.get('phone');
+    document.getElementById('confirm-hostel').textContent = params.get('hostel');
+    document.getElementById('confirm-meal').textContent = params.get('meal');
+    document.getElementById('confirm-quantity').textContent = params.get('quantity');
+    document.getElementById('confirm-notes').textContent = params.get('notes') || 'None';
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
