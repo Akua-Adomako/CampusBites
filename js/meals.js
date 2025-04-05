@@ -3,7 +3,7 @@ const meals = [
     name: "Jollof Rice",
     desc: "Spicy Ghanaian jollof with fried plantains",
     price: 25,
-    image: "images/jollof-rice.jpg",
+    image: "images/jollof.jpg",
     category: "Rice Dishes",
   },
   {
@@ -24,14 +24,14 @@ const meals = [
     name: "Banku & Tilapia",
     desc: "Grilled tilapia with spicy pepper and banku",
     price: 35,
-    image: "images/banku-tilapia.jpg",
+    image: "images/banku.jpg",
     category: "Local Dishes",
   },
   {
-    name: "Fried Yam & Chofi",
+    name: "Fried Yam & Shito",
     desc: "Crispy yam served with turkey tail and shito",
     price: 22,
-    image: "images/yam-chofi.jpg",
+    image: "images/fried-yam.jpg",
     category: "Local Dishes",
   },
   {
@@ -49,7 +49,7 @@ const meals = [
     category: "Rice Dishes",
   },
   {
-    name: "Ampesi & Garden Egg",
+    name: "Ampesi & Kontomire Stew",
     desc: "Boiled yam with kontomire and eggs",
     price: 23,
     image: "images/ampesi.jpg",
@@ -126,10 +126,10 @@ const meals = [
     category: "Snacks",
   },
   {
-    name: "Chips & Chicken",
-    desc: "Crispy fries with grilled chicken",
+    name: "Kebab",
+    desc: "Spicy beef kebab",
     price: 25,
-    image: "images/chips-chicken.jpg",
+    image: "images/kebab.jpg",
     category: "Snacks",
   },
   {
